@@ -1,0 +1,483 @@
+<?php
+include("connection.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="html_practice" content="content"basefont size="10">
+    <title>Travel and Tour</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<header>
+    <i id="menu-bar" class="fas fa-bars"></i>
+    <a href="#" class="logo"><span>T</span>ravel</a>
+    <nav class="navbar">
+        <a href="home">home</a>
+        <a href="book">book</a>
+        <a href="packages">packages</a>
+        <a href="services">services</a>
+        <a href="review">review</a>
+        <a href="contact">contact</a>
+    </nav>
+    <div class="icons">
+        <img src="" alt="" id="login-btn">
+    </div>
+</header>
+<div class="login-form-container">
+    <i class="fas fa-time" id="form-close"></i>
+    <form method="get" action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="Enter your email">
+        <input type="password" class="box" placeholder="Enter your password">
+        <input type="submit" class="btn" value="Login now">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an acount? <a href="#">register now</a></p>
+    </form>
+</div>
+<section class="home" id="home">
+    <div class="content">
+        <h3>Adventure is worthwhile</h3>
+        <p>Dicover new place with us, adventure awaits</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+    <div class="controls">
+        <span class="vid-btn active" data-src="c:\Users\Admin\Desktop\website\drone.webm"></span>
+        <span class="vid-btn" data-src="c:\Users\Admin\Desktop\website\nature1.webm"></span>
+        <span class="vid-btn" data-src="c:\Users\Admin\Desktop\website\nature2.mp4"></span>
+
+    </div>
+    <div class="video-container">
+        <video src="c:\Users\Admin\Desktop\website\drone.webm" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="c:\Users\Admin\Desktop\website\Screenshot 2024-05-19 195621.png" alt="">
+        </div>
+        <form action="login.php" method="post">
+            <div class="inputBox">
+                <h3>Email:</h3><br>
+                <input type="email" class="box" placeholder="Enter your email" name="email"><br><br>
+                <h3>password:</h3><br>
+        <input type="password" class="box" placeholder="Enter your password" name="password">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an acount? <a href="#">register now</a></p>
+               <h3>Where to?</h3><br>
+               <input type="text" placeholder="place name" name="place"><br><br>
+            </div>
+            <div class="inputBox">
+                <h3>how many?</h3><br>
+                <input type="number" placeholder="number of guests" name="guests"><br><br>
+             </div>
+             <div class="inputBox">
+                <h3>arrivals?</h3><br>
+                <input type="date" name="arrival"><br><br>
+             </div>
+             <div class="inputBox">
+                <h3>leaving?</h3><br>
+                <input type="date" name="leaving"><br><br>
+             </div>
+             <input type="submit" class="btn" value="book now">
+        </form>
+    </div>
+</section>
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+             <img src="c:\Users\Admin\Desktop\website\istockphoto-1345426734-612x612.jpg" alt="" class="country1">
+             <div class="content">
+                <h3><img src="c:\Users\Admin\Desktop\website\location_icon.png" alt="" class="location_icon">Paris</h3>
+                <p>Often referred to as the "City of Light"</p>
+                <div class="stars">
+                    <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                    <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                    <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                    <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                    <span><img src="c:\Users\Admin\Desktop\website\white_star.png" alt=""></span>
+                </div>
+                <div class="price">$90.00<span> $120.00</span></div>
+                <a href="booknow" class="btn">book now</a>
+             </div>
+            </div>
+
+            <div class="box">
+                <img src="c:\Users\Admin\Desktop\website\london.jpg" alt="" class="country2">
+                <div class="content">
+                   <h3><img src="c:\Users\Admin\Desktop\website\location_icon.png" alt="" class="location_icon">London</h3>
+                   <p>the capital city of England</p>
+                   <div class="stars">
+                       <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                       <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                       <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                       <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                       <span><img src="c:\Users\Admin\Desktop\website\white_star.png" alt=""></span>
+                   </div>
+                   <div class="price">$90.00<span> $120.00</span></div>
+                   <a href="bookknow" class="btn">book now</a>
+                </div>
+               </div>
+
+               <div class="box">
+                <img src="c:\Users\Admin\Desktop\website\spanish.jpg" alt="" class="country3">
+                <div class="content">
+                   <h3><img src="c:\Users\Admin\Desktop\website\location_icon.png" alt="" class="location_icon">Spain</h3>
+                   <p>Country located in southwestern Europe</p>
+                   <div class="stars">
+                       <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                       <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                       <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                       <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                       <span><img src="c:\Users\Admin\Desktop\website\white_star.png" alt=""></span>
+                   </div>
+                   <div class="price">$90.00<span> $120.00</span></div>
+                   <a href="bookkknow" class="btn">book now</a>
+                </div>
+               </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <span><img src="c:\Users\Admin\Desktop\website\hotel.png" alt=""></span>
+                <h3>affordable hotels</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, iusto incidunt. Fuga veritatis reiciendis doloremque inventore omnis pariatur aperiam numquam, provident odit, non eaque distinctio dolore incidunt ex fugiat temporibus?</p>
+            </div>
+
+            <div class="box">
+                <span><img src="c:\Users\Admin\Desktop\website\food.png" alt=""></span>
+                <h3>food and drink</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, iusto incidunt. Fuga veritatis reiciendis doloremque inventore omnis pariatur aperiam numquam, provident odit, non eaque distinctio dolore incidunt ex fugiat temporibus?</p>
+            </div>
+
+            <div class="box">
+                <span><img src="c:\Users\Admin\Desktop\website\speaker.png" alt=""></span>
+                <h3>safty guide</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, iusto incidunt. Fuga veritatis reiciendis doloremque inventore omnis pariatur aperiam numquam, provident odit, non eaque distinctio dolore incidunt ex fugiat temporibus?</p>
+            </div>
+        </div>
+    </section>
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class="review-slider">
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="box">
+                        <img src="c:\Users\Admin\Desktop\website\boy2.png" alt="" class="personal">
+                        <h3>John deo</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim eligendi porro totam iure cumque quam, error nisi ducimus repellendus iste esse at! Quibusdam praesentium accusantium quasi ex quo modi distinctio.</p>
+                        <div class="star">
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\white_star.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="box">
+                        <img src="c:\Users\Admin\Desktop\website\girl.png" alt="" class="personal">
+                        <h3>Cristina deo</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim eligendi porro totam iure cumque quam, error nisi ducimus repellendus iste esse at! Quibusdam praesentium accusantium quasi ex quo modi distinctio.</p>
+                        <div class="star">
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\white_star.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="box">
+                        <img src="c:\Users\Admin\Desktop\website\boy1.png" alt="" class="personal">
+                        <h3>Daived deo</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim eligendi porro totam iure cumque quam, error nisi ducimus repellendus iste esse at! Quibusdam praesentium accusantium quasi ex quo modi distinctio.</p>
+                        <div class="star">
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\white_star.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="box">
+                        <img src="c:\Users\Admin\Desktop\website\girl1.png" alt="" class="personal">
+                        <h3>Joelle deo</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim eligendi porro totam iure cumque quam, error nisi ducimus repellendus iste esse at! Quibusdam praesentium accusantium quasi ex quo modi distinctio.</p>
+                        <div class="star">
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\black_star.png" alt=""></span>
+                            <span><img src="c:\Users\Admin\Desktop\website\white_star.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+      <div class="rows">
+        <div class="image">
+            <img src="c:\Users\Admin\Desktop\website\contact.png" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+              <input type="text" placeholder="name">
+              <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+              </div>
+              <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+              <input type="submit" class="btn" value="send message">
+        </form>
+      </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores labore, vel incidunt consequuntur veritatis ratione doloribus assumenda unde. Blanditiis ipsam aperiam voluptates velit pariatur molestiae minus nobis voluptatibus rerum cumque!</p>
+            </div>
+
+            <div class="box">
+                <h3>braunch locations</h3>
+                <a href="#">india</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="h">home</a>
+                <a href="b">book</a>
+                <a href="p">packages</a>
+                <a href="s">services</a>
+                <a href="r">review</a>
+                <a href="c">contact</a>
+
+            </div>
+
+            <div class="box">
+                <h3>folllow us</h3>
+                <a href="https://www.facebook.com/share/N4oV2UDxFEGiNFRZ/?mibextid=qi2Omg">facebook</a>
+                <a href="https://www.instagram.com/ranim_alhourani?igsh=ZTF6Z2FzdXU5Y2c2">instagram</a>
+            </div>
+        </div>
+        <h1 class="credit">Created by <span>Ranim alhourani</span> | all rights reserved!</h1>
+    </section>
+
+<script>
+    let searchBtn=document.querySelector('#search-btn');
+    let searchBar=document.querySelector('.search-bar-container');
+    var image=document.getElementById("login-btn");
+    let form=document.querySelector(".login-form-container");
+    let menu=document.querySelector('#menu-bar');
+    let navbar=document.querySelector('.navbar');
+    let videoBtn=document.querySelectorAll('.vid-btn');
+    var booklink=document.querySelector('a[href="book"]');
+    var homelink=document.querySelector('a[href="home"]');
+    var packageslink=document.querySelector('a[href="packages"]');
+    var serviceslink=document.querySelector('a[href="services"]');
+    var reviewlink=document.querySelector('a[href="review"]');
+    var contactlink=document.querySelector('a[href="contact"]');
+
+    var blink=document.querySelector('a[href="b"]');
+    var hlink=document.querySelector('a[href="h"]');
+    var plink=document.querySelector('a[href="p"]');
+    var slink=document.querySelector('a[href="s"]');
+    var rlink=document.querySelector('a[href="r"]');
+    var clink=document.querySelector('a[href="c"]');
+
+    var booknowlink=document.querySelector('a[href="booknow"]');
+    var bookknowlink=document.querySelector('a[href="bookknow"]');
+    var bookkknowlink=document.querySelector('a[href="bookkknow"]');
+
+    image.addEventListener("click",function(){
+        form.style.display="block";
+    });
+    booklink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var booksection=document.getElementById('book');
+        booksection.scrollIntoView({behavior:"smooth"})
+    })
+    booknowlink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var booknowsection=document.getElementById('book');
+        booknowsection.scrollIntoView({behavior:"smooth"})
+    })
+    bookknowlink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var bookknowsection=document.getElementById('book');
+        bookknowsection.scrollIntoView({behavior:"smooth"})
+    })
+    bookkknowlink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var bookkknowsection=document.getElementById('book');
+        bookkknowsection.scrollIntoView({behavior:"smooth"})
+    })
+    homelink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var homesection=document.getElementById('home');
+        homesection.scrollIntoView({behavior:"smooth"})
+    })
+    packageslink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var packagessection=document.getElementById('packages');
+        packagessection.scrollIntoView({behavior:"smooth"})
+    })
+    serviceslink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var servicessection=document.getElementById('services');
+        servicessection.scrollIntoView({behavior:"smooth"})
+    })
+    reviewlink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var reviewsection=document.getElementById('review');
+        reviewsection.scrollIntoView({behavior:"smooth"})
+    })
+    contactlink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var contactsection=document.getElementById('contact');
+        contactsection.scrollIntoView({behavior:"smooth"})
+    })
+    
+    blink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var bsection=document.getElementById('book');
+        bsection.scrollIntoView({behavior:"smooth"})
+    })
+    hlink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var hsection=document.getElementById('home');
+        hsection.scrollIntoView({behavior:"smooth"})
+    })
+    plink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var psection=document.getElementById('packages');
+        psection.scrollIntoView({behavior:"smooth"})
+    })
+    slink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var ssection=document.getElementById('services');
+        ssection.scrollIntoView({behavior:"smooth"})
+    })
+    rlink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var rsection=document.getElementById('review');
+        rsection.scrollIntoView({behavior:"smooth"})
+    })
+    clink.addEventListener('click',
+    function(event){
+        event.preventDefault();
+        var csection=document.getElementById('contact');
+        csection.scrollIntoView({behavior:"smooth"})
+    })
+    window.onscroll = () =>{
+        searchBtn.classList.remove('fa-times');
+        searchBar.classList.remove('active');
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+        loginForm.classList.remove('active');
+
+    }
+    menu.addEventListener('click',()=>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+
+    });
+    
+    
+    videoBtn.forEach(btn =>{
+      btn.addEventListener('click',()=>{
+         document.querySelector('.controls .active').classList.remove('active');
+         btn.classList.add('active');
+         let src=btn.getAttribute('data-src');
+         document.querySelector('#video-slider').src= src;
+      });
+    });
+    
+</script>
+</body> 
+        
+
+
+</html>
